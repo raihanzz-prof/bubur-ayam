@@ -1,0 +1,43 @@
+/* Global Styles handled by Tailwind CDN where possible */
+/* Keeping standard resets just in case, though Tailwind Preflight handles most */
+
+body {
+  margin: 0;
+  font-family: 'Outfit', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background-color: #FFFBEB;
+  /* Fallback */
+}
+
+/* Ensure images behave */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Custom Scrollbar - Premium Thin Style */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fef3c7;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #f59e0b, #ea580c);
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #ea580c, #d97706);
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #f59e0b #fef3c7;
+}
