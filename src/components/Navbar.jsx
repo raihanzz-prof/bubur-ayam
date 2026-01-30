@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, ShoppingBag, ChevronDown } from 'lucide-react';
+import Icon from '../assets/bubur/Icon.jpeg';
 
 const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -41,9 +42,9 @@ const Navbar = () => {
                             }`}
                         style={{ fontFamily: 'var(--font-display)' }}
                     >
-                        <div className={`w-10 h-10 md:w-12 md:h-12 rounded-xl bg-gradient-to-br from-amber-400 to-orange-600 flex items-center justify-center shadow-lg transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6 ${isScrolled ? 'shadow-orange-500/30' : 'shadow-orange-500/50'
+                        <div className={`w-10 h-10 md:w-12 md:h-12 rounded-xl overflow-hidden shadow-lg transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6 ${isScrolled ? 'shadow-orange-500/30' : 'shadow-orange-500/50'
                             }`}>
-                            <span className="text-white text-xl md:text-2xl font-black">NK</span>
+                            <img src={Icon} alt="Logo" className="w-full h-full object-cover" />
                         </div>
                         <div className="flex flex-col leading-none">
                             <span className="text-base md:text-lg">Bubur Ayam</span>
